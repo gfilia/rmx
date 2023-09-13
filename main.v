@@ -32,7 +32,7 @@ fn read_files_recursively(path string) {
 		//println("     " + path + "/" + file)
 		os.rm(path + '/' + file) or { 
 			println(err) 
-			}
+		}
 	}
 
 	println("${files.len} Files deleted")
